@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Clase 29 - Repaso</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="card" data-nombre="artilugia" data-sexo="hembra" data-color="tricolor">
+            <img src="http://www.placekitten.com/200">
+            <div class="title">
+                <h4>Artilugia</h4>
+            </div>
+        </div>
+
+        <div class="card" data-nombre="boris" data-sexo="macho" data-color="blanco">
+            <img src="http://www.placekitten.com/300">
+            <div class="title">
+                <h4>Boris</h4>
+            </div>
+        </div>
+
+        <div class="card" data-nombre="pippin" data-sexo="hembra" data-color="negro">
+            <img src="http://www.placekitten.com/400">
+            <div class="title">
+                <h4>Pippin</h4>
+            </div>
+        </div>
+
+        <div class="card" data-nombre="pepo" data-sexo="macho" data-color="tricolor">
+            <img src="http://www.placekitten.com/500">
+            <div class="title">
+                <h4>Pepo</h4>
+            </div>
+        </div>
+
+    </div>
+    <!-- <button id="filtrar">borrar un gato</button> -->
+
+    <form>
+        <label for="name">Filtrar por Nombre
+            <input type="text" id="name" />
+        </label>
+
+        <label for="colores">Filtrar por color</label>
+        <button type="button" data-color="todos" class="filtro-boton">Todos</button>
+        <button type="button" data-color="blanco" class="filtro-boton">Blanco</button>
+        <button type="button" data-color="negro" class="filtro-boton">Negro</button>
+        <button type="button" data-color="tricolor" class="filtro-boton">Tricolor</button>
+
+        <label for="sexo"> Filtrar por sexo</label>
+            <input type="radio" name="sexo" value="h" class="filtro-sexo" data-sexo="hembra"> Hembra
+            <input type="radio" name="sexo" value="m" class="filtro-sexo" data-sexo="macho"> Macho
+            <input type="radio" name="sexo" value="i" class="filtro-sexo" data-sexo="indistinto"> Indistinto
+        </label>
+    </form>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
